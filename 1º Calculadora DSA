@@ -1,1 +1,35 @@
+#Calculadora (SOZINHO)
+print('Operações: \n1 - Soma \n2 - Subtração \n3 - Multiplicação \n4 - Divisão')
 
+operação = input('\nDigite sua opção (1/2/3/4): ')
+
+if operação == '1':
+  soma = lambda num1, num2: int(num1)+int(num2)
+  num1=input('Digite o primero número: ')
+  num2=input('Digite o segundo número: ')
+  soma(int(num1),int(num2))
+  print('\nResultado: %s + %s = %s' %(int(num1), int(num2), (int(num1)+int(num2))))
+
+elif operação == '2':
+  subtração = lambda num3, num4: int(num3)-int(num4)
+  num3=input('Digite o primero número: ')
+  num4=input('Digite o segundo número: ')
+  subtração(int(num3),int(num4))
+  print('\nResultado: %s - %s = %s' %(int(num3), int(num4), (int(num3)-int(num4))))
+
+elif operação == '3':
+  multiplicação = lambda num5, num6: int(num5)*int(num6)
+  num5=input('Digite o primero número: ')
+  num6=input('Digite o segundo número: ')
+  multiplicação(int(num5),int(num6))
+  print('\nResultado: %s x %s = %s' %(int(num5), int(num6), (int(num5)*int(num6))))
+
+elif operação == '4':
+  divisão = lambda num7, num8: int(num7)*int(num8)
+  num7=input('Digite o primero número: ')
+  num8=input('Digite o segundo número: ')
+  divisão(int(num7),int(num8))
+  print('\nResultado: %s / %s = %s' %(int(num7), int(num8), (int(num7)//int(num8))))
+
+else:
+  print('\nOpcão inválida')
